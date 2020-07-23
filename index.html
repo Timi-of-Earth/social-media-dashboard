@@ -3,10 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | [Challenge Name Here]</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@531&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Social Media Dashboard</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
@@ -15,73 +16,131 @@
   </style>
 </head>
 <body>
-
-  Social Media Dashboard
-  Total Followers: 23,004
-
-  Dark Mode
-
-  
-
-  @nathanf
-  1987
-  Followers
-  12 Today
-
-  @nathanf
-  1044
-  Followers
-  99 Today
-
-  @realnathanf
-  11k
-  Followers
-  1099 Today
-
-  Nathan F.
-  8239
-  Subscribers
-  144 Today
-
-
-
-  Overview - Today
-
-  Page Views
-  87
-  3%
-
-  Likes
-  52
-  2%
-
-  Likes
-  5462
-  2257%
-
-  Profile Views
-  52k
-  1375%
-
-  Retweets
-  117
-  303%
-
-  Likes
-  507
-  553%
-
-  Likes
-  107
-  19%
-
-  Total Views
-  1407
-  12%
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+<div class="container-fluid">
+  <div class="broad"></div>
+<div class="banner">
+  <div class="row">
+  <div class="col-12 col-sm-6 banner-text-left">
+    <p id="smd">Social Media Dashboard</p>
+    <p id="tf">Total followers: 23,004</p>
   </div>
+  <div class="col-12 col-sm-6 banner-text-right">
+    <p id="dark-mode">Dark Mode</p>
+  </div>
+  </div>
+  <div class="row general">
+    <div class="col-12 col-sm-3">
+      <div class="card m-cards facebook">
+        <p class="overview"><img src="images\icon-facebook.svg"> @Nathanf</p>
+        
+        <p class="followers-num">1987</p>
+        <p class="followers">F O L L O W E R S</p>
+        <p class="today"><img src="images\icon-up.svg">12 today</p>
+      </div>
+    </div>
+    <div class="col-12 col-sm-3">
+      <div class="card m-cards twitter">
+        <p class="overview"><img src="images\icon-twitter.svg"> @Nathanf</p>
+        
+        <p class="followers-num">1044</p>
+        <p class="followers">F O L L O W E R S</p>
+        <p class="today"><img src="images\icon-up.svg">99 today</p>
+      </div>
+    </div>
+    <div class="col-12 col-sm-3">
+      <div class="card m-cards instagram">
+        <p class="overview"><img src="images\icon-instagram.svg"> @Nathanf</p>
+        
+        <p class="followers-num">11K</p>
+        <p class="followers">F O L L O W E R S</p>
+        <p class="today"><img src="images\icon-up.svg">1099 today</p>
+      </div>
+    </div>
+    <div class="col-12 col-sm-3">
+      <div class="card m-cards youtube">
+        <p class="overview"><img src="images\icon-youtube.svg"> @Nathanf</p>
+        
+        <p class="followers-num">8239</p>
+        <p class="followers">F O L L O W E R S</p>
+        <p class="today" style="color: hsl(356, 69%, 56%);"><img src="images\icon-down.svg">144 today</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="overview-today">
+    <p style="font-size: 20px; color: hsl(228, 12%, 44%)">Overview - Today</p>
+    <div class="row row-a">
+      <div class="col-12 col-sm-3">
+        <div class="card n-card">
+          <div class="row">
+            <div class="col"><p class="overview">Page Views</p> <p style="font-size: 30px; font-weight: 700; margin: 0px">87</p></div>
+            <div class="col"><p style="text-align: right;"><img src="images\icon-facebook.svg"></p> <p style="text-align: right; margin-bottom: 0px; margin-top: 35px;" class="today"> <img src="images\icon-up.svg">3% </p></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-3">
+        <div class="card n-card">
+          <div class="row">
+            <div class="col"><p class="overview">Page Views</p> <p style="font-size: 30px; font-weight: 700; margin: 0px">87</p></div>
+            <div class="col"><p style="text-align: right;"><img src="images\icon-facebook.svg"></p> <p style="text-align: right; margin-bottom: 0px; margin-top: 35px;" class="today"> <img src="images\icon-up.svg">2% </p></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-3">
+        <div class="card n-card">
+          <div class="row">
+            <div class="col"><p class="overview">Page Views</p> <p style="font-size: 30px; font-weight: 700; margin: 0px">87</p></div>
+            <div class="col"><p style="text-align: right;"><img src="images\icon-instagram.svg"></p> <p style="text-align: right; margin-bottom: 0px; margin-top: 35px;" class="today"> <img src="images\icon-up.svg">2257% </p></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-3">
+        <div class="card n-card">
+          <div class="row">
+            <div class="col"><p class="overview">Page Views</p> <p style="font-size: 30px; font-weight: 700; margin: 0px">87</p></div>
+            <div class="col"><p style="text-align: right;"><img src="images\icon-instagram.svg"></p> <p style="text-align: right; margin-bottom: 0px; margin-top: 35px;" class="today"> <img src="images\icon-up.svg">1375% </p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row row-b">
+      <div class="col-12 col-sm-3">
+        <div class="card n-card">
+          <div class="row">
+            <div class="col"><p class="overview">Page Views</p> <p style="font-size: 30px; font-weight: 700; margin: 0px">87</p></div>
+            <div class="col"><p style="text-align: right;"><img src="images\icon-twitter.svg"></p> <p style="text-align: right; margin-bottom: 0px; margin-top: 35px;" class="today"> <img src="images\icon-up.svg">303% </p></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-3">
+        <div class="card n-card">
+          <div class="row">
+            <div class="col"><p class="overview">Page Views</p> <p style="font-size: 30px; font-weight: 700; margin: 0px">87</p></div>
+            <div class="col"><p style="text-align: right;"><img src="images\icon-twitter.svg"></p> <p style="text-align: right; margin-bottom: 0px; margin-top: 35px;" class="today"> <img src="images\icon-up.svg">553% </p></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-3">
+        <div class="card n-card">
+          <div class="row">
+            <div class="col"><p class="overview">Page Views</p> <p style="font-size: 30px; font-weight: 700; margin: 0px">87</p></div>
+            <div class="col"><p style="text-align: right;"><img src="images\icon-youtube.svg"></p> <p style="text-align: right; margin-bottom: 0px; margin-top: 35px;" class="today"> <img src="images\icon-up.svg">19% </p></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-3">
+        <div class="card n-card">
+          <div class="row">
+            <div class="col"><p class="overview">Page Views</p> <p style="font-size: 30px; font-weight: 700; margin: 0px">87</p></div>
+            <div class="col"><p style="text-align: right;"><img src="images\icon-youtube.svg"></p> <p style="text-align: right; margin-bottom: 0px; margin-top: 35px;" class="today"> <img src="images\icon-up.svg">12% </p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</div>
+
+</div>
 </body>
 </html>

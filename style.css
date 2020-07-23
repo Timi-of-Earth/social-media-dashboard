@@ -1,0 +1,138 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Inter', sans-serif;
+}
+.banner {
+    
+    width: 100%;
+    left: 0px;
+}
+
+.broad {
+    position: fixed;
+    height: 30%;
+    background-color: hsl(225, 100%, 98%);
+    width: 100%;
+    top: 0px;
+    left: 0px;
+}
+
+.banner-text-left #smd {
+    font-size: 20px;
+    margin-left: 20%;
+    margin-top: 25px;
+    font-weight: 700;
+    margin-bottom: 0px;
+}
+
+.banner-text-left #tf {
+    padding-left: 20%;
+    margin-top: 0px;
+    font-size: 14px;
+    color: hsl(228, 12%, 44%)
+}
+.banner-text-right {
+    text-align: right;
+    font-size: 14px;
+    color: hsl(228, 12%, 44%);
+    padding-right: 15%;
+    padding-top: 25px;
+}
+
+.general {
+    padding-left: 10%;
+    padding-right: 10%;;
+    margin-top: 1.5%;
+}
+
+.m-cards {
+    text-align: center;
+    background-color: hsl(227, 47%, 96%)
+}
+
+.facebook {
+    border-top: solid 4px hsl(208, 92%, 53%);
+}
+
+.twitter {
+    border-top: solid 4px hsl(203, 89%, 53%);
+}
+
+.instagram {
+    border-top: solid 4px red;
+}
+
+.youtube {
+    border-top: solid 4px hsl(348, 97%, 39%);
+}
+
+.overview {
+    font-weight: 700;
+    font-size: 14px;
+    padding-top: 8%;
+    color: hsl(228, 12%, 44%);
+}
+
+.followers-num {
+    font-size: 40px;
+    color: hsl(230, 17%, 14%);
+    font-weight: 700;
+    margin-bottom: 0px;
+}
+
+.followers {
+    color: hsl(228, 12%, 44%);
+    font-size: 14px;
+    margin-top: 0px;
+    font-weight: 100; 
+}
+
+.today {
+    color: hsl(163, 72%, 41%);
+    font-size: 12px;
+}
+
+.overview-today {
+    padding-left: 10%;
+    margin-top: 3%;
+    padding-right: 10%;
+}
+
+.n-card {
+    padding: 18px;
+    background-color: hsl(227, 47%, 96%);
+}
+
+.row-b {
+    margin-top: 1.5%;
+    margin-bottom: 5%;
+}
+
+@media screen and (max-width: 768px) {
+    .m-cards {
+        margin-top: 10%;
+        
+    }
+    .banner-text-left #tf {
+        padding-left: 5%;
+        margin-left: 0px;
+    }
+    .banner-text-left #smd {
+        padding-left: 5%;
+        margin-left: 0px;
+    }
+    .banner-text-right {
+        text-align: left;
+        padding-left: 13%;
+    }
+
+    .n-card {
+        
+        margin-bottom: 5%;
+    }
+    .row-b {
+        margin-top: 0;
+    }
+
+}
